@@ -1,0 +1,145 @@
+.hero {
+  height: 800px;
+  position: relative;
+  margin: 0 0 100px 0;
+  background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+
+  &:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.06;
+    background: url(../img/hero-bg.webp) no-repeat left/90% 100%;
+  }
+
+  .hero__slider {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero__slider-wrp {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+  }
+
+  &__slider-next {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+  }
+
+  .hero__pagination {
+    width: 10px;
+    height: 200px;
+    position: absolute;
+    top: 36,895%;
+    left: 96.75%;
+
+
+    .swiper-pagination-bullet {
+      @extend %dot;
+      width: 10px;
+      height: 10px;
+      background-color: transparent;
+    }
+
+    .swiper-pagination-bullet+.swiper-pagination-bullet {
+      margin-top: 40px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #fff;
+    }
+  }
+
+  &__content {
+    padding-top: 330px;
+  }
+
+  &__title {
+    margin: auto;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin: auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    margin-bottom: 240px;
+    text-transform: uppercase;
+  }
+
+
+}
+
+
+@media(max-width:1170px) {
+  .hero {
+    &__title {
+      max-width: 800px;
+    }
+  }
+}
+
+
+@media(max-width:768px) {
+  .hero {
+    height: 100vh;
+
+    &__title {
+      font-size: 54px;
+      max-width: 600px;
+      line-height: 1.2;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+
+    &__content {
+      padding-top: 40vh;
+    }
+  }
+}
+
+@media(max-width:525px) {
+  .hero {
+
+    &__title {
+      font-size: 32px;
+      max-width: 600px;
+      line-height: 1.2;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+    }
+  }
+}

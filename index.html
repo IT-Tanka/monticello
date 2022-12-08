@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monticello</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  
+
+  <link rel="stylesheet" href="libraries/normalize.css">
+  <link rel="stylesheet" href="libraries/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="libraries/fancybox.min.css" />
+
+  <link rel="stylesheet" href="src/css/style.min.css">
+
+  <script src="libraries/swiper-bundle.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+
+<body>
+  <header class="header header-on-start header-small" >
+      <div class="container">
+        <div class="header__nav">
+          <a href="#" class="header__logo-link logo-link">
+            <img src="src/img/logo.webp" alt="Monticello" class="header__logo-img logo-img">
+          </a>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#about" class="header__menu-link">About us</a>
+            </li>
+            <li class="header__menu-item">
+              <a href=" #projects" class="header__menu-link">Projects</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#news" class="header__menu-link">News</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#contact" class="header__menu-link">Contact</a>
+            </li>
+          </ul>
+          <div class="header__social social">
+            <a href="#" class="header__social-link social-link">
+              <svg class="social-svg" width="10" height="16" viewBox="0 0 10 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.71875 9L9.15625 6.125H6.375V4.25C6.375 3.4375 6.75 2.6875 8 2.6875H9.28125V0.21875C9.28125 0.21875 8.125 0 7.03125 0C4.75 0 3.25 1.40625 3.25 3.90625V6.125H0.6875V9H3.25V16H6.375V9H8.71875Z"
+                  fill="none" />
+              </svg>
+            </a>
+            <a href="#" class="header__social-link social-link">
+              <svg class="social-svg" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.3438 3.75C14.9688 3.28125 15.5312 2.71875 15.9688 2.0625C15.4062 2.3125 14.75 2.5 14.0938 2.5625C14.7812 2.15625 15.2812 1.53125 15.5312 0.75C14.9062 1.125 14.1875 1.40625 13.4688 1.5625C12.8438 0.90625 12 0.53125 11.0625 0.53125C9.25 0.53125 7.78125 2 7.78125 3.8125C7.78125 4.0625 7.8125 4.3125 7.875 4.5625C5.15625 4.40625 2.71875 3.09375 1.09375 1.125C0.8125 1.59375 0.65625 2.15625 0.65625 2.78125C0.65625 3.90625 1.21875 4.90625 2.125 5.5C1.59375 5.46875 1.0625 5.34375 0.625 5.09375V5.125C0.625 6.71875 1.75 8.03125 3.25 8.34375C3 8.40625 2.6875 8.46875 2.40625 8.46875C2.1875 8.46875 2 8.4375 1.78125 8.40625C2.1875 9.71875 3.40625 10.6562 4.84375 10.6875C3.71875 11.5625 2.3125 12.0938 0.78125 12.0938C0.5 12.0938 0.25 12.0625 0 12.0312C1.4375 12.9688 3.15625 13.5 5.03125 13.5C11.0625 13.5 14.3438 8.53125 14.3438 4.1875C14.3438 4.03125 14.3438 3.90625 14.3438 3.75Z"
+                  fill="none" />
+              </svg>
+            </a>
+            <a href="#" class="header__social-link social-link">
+              <svg class="social-svg" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8 3.40625C6 3.40625 4.40625 5.03125 4.40625 7C4.40625 9 6 10.5938 8 10.5938C9.96875 10.5938 11.5938 9 11.5938 7C11.5938 5.03125 9.96875 3.40625 8 3.40625ZM8 9.34375C6.71875 9.34375 5.65625 8.3125 5.65625 7C5.65625 5.71875 6.6875 4.6875 8 4.6875C9.28125 4.6875 10.3125 5.71875 10.3125 7C10.3125 8.3125 9.28125 9.34375 8 9.34375ZM12.5625 3.28125C12.5625 2.8125 12.1875 2.4375 11.7188 2.4375C11.25 2.4375 10.875 2.8125 10.875 3.28125C10.875 3.75 11.25 4.125 11.7188 4.125C12.1875 4.125 12.5625 3.75 12.5625 3.28125ZM14.9375 4.125C14.875 3 14.625 2 13.8125 1.1875C13 0.375 12 0.125 10.875 0.0625C9.71875 0 6.25 0 5.09375 0.0625C3.96875 0.125 3 0.375 2.15625 1.1875C1.34375 2 1.09375 3 1.03125 4.125C0.96875 5.28125 0.96875 8.75 1.03125 9.90625C1.09375 11.0312 1.34375 12 2.15625 12.8438C3 13.6562 3.96875 13.9062 5.09375 13.9688C6.25 14.0312 9.71875 14.0312 10.875 13.9688C12 13.9062 13 13.6562 13.8125 12.8438C14.625 12 14.875 11.0312 14.9375 9.90625C15 8.75 15 5.28125 14.9375 4.125ZM13.4375 11.125C13.2188 11.75 12.7188 12.2188 12.125 12.4688C11.1875 12.8438 9 12.75 8 12.75C6.96875 12.75 4.78125 12.8438 3.875 12.4688C3.25 12.2188 2.78125 11.75 2.53125 11.125C2.15625 10.2188 2.25 8.03125 2.25 7C2.25 6 2.15625 3.8125 2.53125 2.875C2.78125 2.28125 3.25 1.8125 3.875 1.5625C4.78125 1.1875 6.96875 1.28125 8 1.28125C9 1.28125 11.1875 1.1875 12.125 1.5625C12.7188 1.78125 13.1875 2.28125 13.4375 2.875C13.8125 3.8125 13.7188 6 13.7188 7C13.7188 8.03125 13.8125 10.2188 13.4375 11.125Z"
+                  fill="none" />
+              </svg>
+            </a>
+          </div>
+          <div class="burger__btn">
+            <div class="burger-dot dot"></div>
+            <div class="burger-dot dot"></div>
+            <div class="burger-dot dot"></div>
+          </div>
+        </div>
+      </div>
+  </header>
+  <main class="main">
+    <section class="hero" id="about">
+      <div class="hero__slider swiper">
+        <div class="hero__slider-wrp  swiper-wrapper">
+          <div class="hero__content swiper-slide">
+            <div class="container">
+              <h1 class="hero__title">SIMPLE & MODERN</h1>
+              <h3 class="hero__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+            </div>
+          </div>
+          <div class="hero__content swiper-slide">
+            <div class="container">
+              <h1 class="hero__title">BEAUTY & GREAT</h1>
+              <h3 class="hero__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+            </div>
+          </div>
+          <div class="hero__content swiper-slide">
+            <div class="container">
+              <h1 class="hero__title">SIMPLE & MODERN</h1>
+              <h3 class="hero__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+            </div>
+          </div>
+          <div class="hero__content swiper-slide">
+            <div class="container">
+              <h1 class="hero__title">BEAUTY & GREAT</h1>
+              <h3 class="hero__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+            </div>
+          </div>
+          <div class="hero__content swiper-slide">
+            <div class="container">
+              <h1 class="hero__title">SIMPLE & MODERN</h1>
+              <h3 class="hero__subtitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+            </div>
+          </div>
+        </div>
+        <div class="hero__pagination"></div>
+        <a href="#about" class="hero__slider-next  arrow__btn "></a>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section__title title projects__title">
+          WHAT WE DO
+        </h2>
+        <div class="section__project project project1">
+          <div class="project__image">
+            <img src="src/img/projects1.webp" class="project__img"  alt="futuristic white building">
+          </div>
+          <div class="project__content">
+            <h3 class="project__subtitle">ONE WORLD</h3>
+            <h2 class="project__title title">TRADE CENTER</h2>
+            <p class="project__text">Increasing prosperity in our lives can be accomplished by having the right frame of
+              mind. The truth is, our thoughts are very powerful.
+            </p>
+            <a href="#" class="project__link btn">MORE DETAILS</a>
+            <p class="project__location">
+              <img src="src/img/location-icon.svg" alt="location icon" class="project__location-icon">
+              <span class="project__location-address">New York City, United States - 1776 feet</span>
+            </p>
+          </div>
+        </div>
+        <div class="section__project project project2">
+          <div class="project__content">
+            <h3 class="project__subtitle">INTERNATIONAL</h3>
+            <h2 class="project__title title">COMMERCE CENTRE</h2>
+            <p class="project__text">Successful businesses have many things in common, today we’ll look at the big ‘R’
+              of recognition and how a digital
+              advertising network may help.
+            </p>
+            <a href="#" class="project__link btn">MORE DETAILS</a>
+            <p class="project__location">
+              <img src="src/img/location-icon.svg" alt="location icon" class="project__location-icon">
+              <span class="project__location-address">Hong Kong - 1588 feet</span>
+            </p>
+          </div>
+          <div class="project__image">
+            <img src="src/img/projects2.webp" class="project__img" alt="brown building">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section news" id="news">
+      <div class="container">
+        <h2 class="news__title section__title title">
+          LATEST NEWS
+        </h2>
+        <div class="news__slider swiper ">
+          <div class="news__slider-wrp  swiper-wrapper">
+            <a class="news__card card swiper-slide">
+              <img src="src/img/news-card1.webp" alt="corner of building with big window" class="card__img">
+              <div class="card__content">
+                <h4 class="card__title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                <p class="card__text">Free directories: directories are perfect for customers that are searching for...
+                </p>
+                <div class="card__info">
+                  <div class="card__info-left">
+                    <img src="src/img/news-auth1.webp" alt="women">
+                  </div>
+                  <div class="card__info-right">
+                    <span class="card__auth">ALJA BRUN</span>
+                    <span class="card__date">20 Jan 2020</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="news__card card swiper-slide">
+              <img src="src/img/news-card2.webp" alt="corner of building with big window" class="card__img">
+              <div class="card__content">
+                <h4 class="card__title">EFFECTIVE ADVERTISING POINTERS.</h4>
+                <p class="card__text">Having a home based business is a wonderful asset to your life...</p>
+                <div class="card__info">
+                  <div class="card__info-left">
+                    <img src="src/img/news-auth2.webp" alt="women">
+                  </div>
+                  <div class="card__info-right">
+                    <span class="card__auth">DOMINIC FREEMAN</span>
+                    <span class="card__date">13 Dec 2019</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="news__card card swiper-slide">
+              <img src="src/img/news-card3.webp" alt="corner of building with big window" class="card__img">
+              <div class="card__content">
+                <h4 class="card__title">HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
+                <p class="card__text">There are many things that are important to catalog design...</p>
+                <div class="card__info">
+                  <div class="card__info-left">
+                    <img src="src/img/news-auth3.webp" alt="women">
+                  </div>
+                  <div class="card__info-right">
+                    <span class="card__auth">ALICE WARD</span>
+                    <span class="card__date">30 Nov 2019</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="news__card card swiper-slide">
+              <img src="src/img/news-card1.webp" alt="corner of building with big window" class="card__img">
+              <div class="card__content">
+                <h4 class="card__title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                <p class="card__text">Free directories: directories are perfect for customers that are searching for...
+                </p>
+                <div class="card__info">
+                  <div class="card__info-left">
+                    <img src="src/img/news-auth1.webp" alt="women">
+                  </div>
+                  <div class="card__info-right">
+                    <span class="card__auth">ALJA BRUN</span>
+                    <span class="card__date">20 Jan 2020</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="news__card card swiper-slide">
+              <img src="src/img/news-card3.webp" alt="corner of building with big window" class="card__img">
+              <div class="card__content">
+                <h4 class="card__title">HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
+                <p class="card__text">There are many things that are important to catalog design...</p>
+                <div class="card__info">
+                  <div class="card__info-left">
+                    <img src="src/img/news-auth3.webp" alt="women">
+                  </div>
+                  <div class="card__info-right">
+                    <span class="card__auth">ALICE WARD</span>
+                    <span class="card__date">30 Nov 2019</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="news__pagination"></div>
+        </div>
+        <div class="news__slider-btns">
+          <div class="news__slider-left arrow__btn arrow-left"></div>
+          <div class="news__slider-right arrow__btn arrow-right"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <h2 class="section__title title">
+          GALLERY
+        </h2>
+        <div class="gallery__wrp">
+          <div class="gallery__item item1">
+            <img data-fancybox="gallery" class="item__img" src="src/img/gallery1.webp" alt="rounded building">
+          </div>
+          <div class="gallery__item item2">
+            <img data-fancybox="gallery" class="item__img" src="src/img/gallery_2.webp" alt="high-rise building">
+          </div>
+          <div class="gallery__item item3">
+            <img data-fancybox="gallery" class="item__img" src="src/img/gallery_3.webp" alt="corner of a red brick building">
+          </div>
+          <div class="gallery__item item4">
+            <img data-fancybox="gallery" class="item__img" src="src/img/gallery_4.webp" alt="rounded building">
+          </div>
+          <div class="gallery__item item5">
+            <img data-fancybox="gallery" class="item__img" src="src/img/gallery_5.webp" alt="white building in the form of a cube">
+          </div>
+        </div>
+        <a href="#" class="gallery__link btn">SEE MORE</a>
+      </div>
+    </section>
+    <section class="section contact" id="contact">
+      <div class="contacts__map" id="map">
+      </div>
+      <form action="" class="contact__form form">
+        <h2 class="title section__title form__title">GET IN TOUCH</h2>
+        <div class="form__content">
+          <div class="form-left">
+            <img src="src/img/contacts.webp" alt="" class="form__img">
+          </div>
+          <div class="form-right">
+            <div class="form__input-wrp">
+              <input type="text" id="name" placeholder="Name" 
+                class="form__input form__input-name">
+            </div>
+            <div class="form__input-wrp">
+              <input type="email" id="email" placeholder="Email" class="form__input form__input-email">
+            </div>
+            <input type="submit" value="Submit" class="btn form__btn">
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__content">
+        <div class="footer__row">
+          <a href="" class="footer__logo-link">
+            <img src="src/img/logo.webp" alt="Monticello" class="footer__logo-img logo-img">
+          </a>
+          <div class="footer__social social">
+            <a href="#" class="footer__social-link social-link">
+              <svg class="social-svg" width="10" height="16" viewBox="0 0 10 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.71875 9L9.15625 6.125H6.375V4.25C6.375 3.4375 6.75 2.6875 8 2.6875H9.28125V0.21875C9.28125 0.21875 8.125 0 7.03125 0C4.75 0 3.25 1.40625 3.25 3.90625V6.125H0.6875V9H3.25V16H6.375V9H8.71875Z"
+                  fill="none" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link social-link">
+              <svg class="social-svg" width="16" height="14" viewBox="0 0 16 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.3438 3.75C14.9688 3.28125 15.5312 2.71875 15.9688 2.0625C15.4062 2.3125 14.75 2.5 14.0938 2.5625C14.7812 2.15625 15.2812 1.53125 15.5312 0.75C14.9062 1.125 14.1875 1.40625 13.4688 1.5625C12.8438 0.90625 12 0.53125 11.0625 0.53125C9.25 0.53125 7.78125 2 7.78125 3.8125C7.78125 4.0625 7.8125 4.3125 7.875 4.5625C5.15625 4.40625 2.71875 3.09375 1.09375 1.125C0.8125 1.59375 0.65625 2.15625 0.65625 2.78125C0.65625 3.90625 1.21875 4.90625 2.125 5.5C1.59375 5.46875 1.0625 5.34375 0.625 5.09375V5.125C0.625 6.71875 1.75 8.03125 3.25 8.34375C3 8.40625 2.6875 8.46875 2.40625 8.46875C2.1875 8.46875 2 8.4375 1.78125 8.40625C2.1875 9.71875 3.40625 10.6562 4.84375 10.6875C3.71875 11.5625 2.3125 12.0938 0.78125 12.0938C0.5 12.0938 0.25 12.0625 0 12.0312C1.4375 12.9688 3.15625 13.5 5.03125 13.5C11.0625 13.5 14.3438 8.53125 14.3438 4.1875C14.3438 4.03125 14.3438 3.90625 14.3438 3.75Z"
+                  fill="none" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link social-link">
+              <svg class="social-svg" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8 3.40625C6 3.40625 4.40625 5.03125 4.40625 7C4.40625 9 6 10.5938 8 10.5938C9.96875 10.5938 11.5938 9 11.5938 7C11.5938 5.03125 9.96875 3.40625 8 3.40625ZM8 9.34375C6.71875 9.34375 5.65625 8.3125 5.65625 7C5.65625 5.71875 6.6875 4.6875 8 4.6875C9.28125 4.6875 10.3125 5.71875 10.3125 7C10.3125 8.3125 9.28125 9.34375 8 9.34375ZM12.5625 3.28125C12.5625 2.8125 12.1875 2.4375 11.7188 2.4375C11.25 2.4375 10.875 2.8125 10.875 3.28125C10.875 3.75 11.25 4.125 11.7188 4.125C12.1875 4.125 12.5625 3.75 12.5625 3.28125ZM14.9375 4.125C14.875 3 14.625 2 13.8125 1.1875C13 0.375 12 0.125 10.875 0.0625C9.71875 0 6.25 0 5.09375 0.0625C3.96875 0.125 3 0.375 2.15625 1.1875C1.34375 2 1.09375 3 1.03125 4.125C0.96875 5.28125 0.96875 8.75 1.03125 9.90625C1.09375 11.0312 1.34375 12 2.15625 12.8438C3 13.6562 3.96875 13.9062 5.09375 13.9688C6.25 14.0312 9.71875 14.0312 10.875 13.9688C12 13.9062 13 13.6562 13.8125 12.8438C14.625 12 14.875 11.0312 14.9375 9.90625C15 8.75 15 5.28125 14.9375 4.125ZM13.4375 11.125C13.2188 11.75 12.7188 12.2188 12.125 12.4688C11.1875 12.8438 9 12.75 8 12.75C6.96875 12.75 4.78125 12.8438 3.875 12.4688C3.25 12.2188 2.78125 11.75 2.53125 11.125C2.15625 10.2188 2.25 8.03125 2.25 7C2.25 6 2.15625 3.8125 2.53125 2.875C2.78125 2.28125 3.25 1.8125 3.875 1.5625C4.78125 1.1875 6.96875 1.28125 8 1.28125C9 1.28125 11.1875 1.1875 12.125 1.5625C12.7188 1.78125 13.1875 2.28125 13.4375 2.875C13.8125 3.8125 13.7188 6 13.7188 7C13.7188 8.03125 13.8125 10.2188 13.4375 11.125Z"
+                  fill="none" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <span class="footer__copyright">Copyrights © 2020 Montichello</span>
+      </div>
+    </div>
+  </footer>
+  <script src="libraries/fancybox.min.js"></script>
+  <script src="src/js/script.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWgIzpzkPU28gJrL08VUVEC7BMwRjsYec&language=en&callback=initMap&v=weekly">
+    </script>
+</body>
+</html>

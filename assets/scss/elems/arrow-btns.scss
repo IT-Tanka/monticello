@@ -1,0 +1,21 @@
+.arrow__btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  transition: all 0.7s;
+  background: url('../img/arrow.svg') no-repeat center/11px 6px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.arrow-left {
+  transform: rotate(90deg);
+}
+
+.arrow-right {
+  transform: rotate(-90deg);
+}

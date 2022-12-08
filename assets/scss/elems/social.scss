@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-link {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s;
+
+  .social-svg path {
+    transition: all 0.7s;
+    fill: white;
+  }
+
+  &:hover {
+    background-color: white;
+
+    .social-svg path {
+      fill: #2C4058;
+    }
+  }
+
+}
+
+@media(max-width:1024px) {
+  .social-link {
+    height: 30px;
+    width: 30px;
+  }
+}

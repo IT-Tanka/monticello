@@ -1,0 +1,102 @@
+.form {
+  max-width: 770px;
+  width: 100%;
+  min-height: 450px;
+  padding: 60px 60px 68px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0px -4px 30px rgba(133, 133, 133, 0.2);
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url(../img/contacts-bg.webp) no-repeat bottom/contain;
+    opacity: 0.08;
+    z-index: 1;
+  }
+
+  &__content {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    gap: 54px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &-left {
+    max-width: 286px;
+    width: 100%;
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 310px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__input-wrp {
+    width: 100%;
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    border-top: none;
+    border-left: 0;
+    border-right: 0;
+    height: 41px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000000;
+    background-color: transparent;
+    outline: 0;
+
+    &:placeholder {
+      color: #4B5562;
+      opacity: 0.5;
+    }
+
+    &:focus {
+      border-bottom: 1px solid black;
+    }
+  }
+
+  &__input-email {
+    margin-top: 33px;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    padding: 11px 34px 12px 34px;
+    background-color: #fff;
+  }
+
+}
+
+@media(max-width:525px) {
+  .form {
+    &__title {
+      margin-bottom: 70px;
+    }
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__btn {
+      margin:40px auto 0;
+    }
+  }
+}

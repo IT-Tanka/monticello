@@ -1,0 +1,171 @@
+.header {
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  transition: all 0.7s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &-on-start {
+    top: 53px;
+    background: transparent;
+  }
+
+  &-on-scroll {
+    top: 0;
+    background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+  }
+
+  &-small {
+    height: 54px;
+  }
+
+  &-big {
+    height: 100VH;
+    background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+    align-items: start;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__logo-img {
+    width: 100%;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 93px;
+    margin-left: 30px;
+  }
+
+  &__menu-link {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    position: relative;
+    text-transform: uppercase;
+
+    &:before {
+      position: absolute;
+      @extend %dot;
+      width: 9px;
+      height: 9px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -14px;
+    }
+  }
+
+  .burger__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    width: 12px;
+    cursor: pointer;
+    display: none;
+
+    .burger-dot {
+      width: 9px;
+      height: 9px;
+      background-color: #fff;
+    }
+  }
+
+  .active {
+    .burger-dot {
+      background-color: transparent;
+    }
+  }
+
+  .hover-link {
+    &:before {
+      background-color: #fff;
+    }
+  }
+
+}
+
+@media(max-width:1170px) {
+  .header {
+    &__menu {
+      gap: 54px;
+    }
+  }
+}
+
+@media(max-width:1024px) {
+  .header {
+    &__logo-link {
+      height: 43px;
+      width: 193px;
+    }
+
+    &__menu {
+      margin-left: 10px;
+      gap: 63px;
+    }
+  }
+}
+
+@media(max-width:915px) {
+  .header {
+    &__menu {
+      gap: 33px;
+    }
+  }
+}
+
+@media(max-width:768px) {
+  .header {
+    align-items: flex-start;
+
+    &__nav {
+      align-items: flex-end;
+    }
+
+    &__logo-link {
+      padding-top: 3px;
+    }
+
+    &__menu {
+      flex-direction: column;
+      align-items: start;
+      position: absolute;
+      top: 127px;
+      left: -100px;
+      gap: 40px;
+      transition: all 0.5s;
+    }
+
+    &__menu-link {
+      font-size: 18px;
+    }
+
+    .burger__btn {
+      display: flex;
+    }
+  }
+}
+
+@media(max-width:525px) {
+  .header {
+    &__social {
+      display: none;
+    }
+  }
+}
