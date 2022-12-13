@@ -5,20 +5,25 @@
 
 ### Сompleted the project: I
 
-### Languages used:
+### Used
+### languages:
 
 - HTML
 - SASS
 - CSS
 - JavaScript
  
-### Libraries used:
+### libraries:
 
 - Swiper
 - Fancybox
+
+
+### API:
+
 - Google maps
 
-### Technologies used:
+### technologies:
 
 - Responsive cross-browser layout 
 - BEM
